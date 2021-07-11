@@ -2,10 +2,10 @@ const express = require('express')
 const app = express()
 const port = 3000
 const bodyParser = require('body-parser');
-const { User } = require('./model/User');
+const { User } = require('./server/model/User');
 const cookieParser = require('cookie-parser');
-const { auth } = require('./middleware/auth');
-const config = require('./config/key');
+const { auth } = require('./server/middleware/auth');
+const config = require('./server/config/key');
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
