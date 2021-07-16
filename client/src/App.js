@@ -9,11 +9,13 @@ import {
 import LandingPage from './components/views/LandingPage/LandingPage'
 import LoginPage from './components/views/LoginPage/LoginPage'
 import RegisterPage from './components/views/RegisterPage/RegisterPage'
+import Header from './components/views/Header/Header'
 import Auth from './hoc/auth'
 
 function App() {
   return (
     <Router>
+      <Header />
       <div>
         {/*
           A <Switch> looks through all its children <Route>
